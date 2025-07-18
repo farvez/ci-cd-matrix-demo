@@ -24,7 +24,7 @@ jobs:
         
       - name: Run Node.js test
         run: |
-         echo "Testing Node.js Version ${{ matrix-node-version }}"
+         echo "Testing Node.js Version ${{ matrix.node-version }}"
          echo "1 + 2 = $((1 + 2))"
   
   test-python:
@@ -49,5 +49,5 @@ jobs:
         
       - name: Run python test
         run: |
-         echo "Testing python Version ${{ matrix-python-version }}"
+         echo "Testing python Version ${{ matrix.python-version }}"
          echo " assert 1 + 2 == 3" | python
