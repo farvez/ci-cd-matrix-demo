@@ -52,4 +52,4 @@ jobs:
       - name: Run python test
         run: |
          echo "Testing python Version ${{ matrix.python-version }}"
-         echo " assert 1 + 2 == 3" | python
+         echo "assert 1 + 2 == 3" | python
